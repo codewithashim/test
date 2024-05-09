@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import path from 'path';
 import { createLogger, format, transports } from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
@@ -17,7 +16,7 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
 const logger = createLogger({
   level: 'info',
   format: combine(
-    label({ label: 'Bizzy Timer' }),
+    label({ label: 'Marrysafe Server' }),
     timestamp(),
     myFormat
   ),
@@ -27,7 +26,6 @@ const logger = createLogger({
       filename: path.join(
         process.cwd(),
         'logs',
-        'winston',
         'successes',
         'phu-%DATE%-success.log'
       ),
@@ -42,7 +40,7 @@ const logger = createLogger({
 const errorlogger = createLogger({
   level: 'error',
   format: combine(
-    label({ label: 'Bizzy Timer' }),
+    label({ label: 'Marrysafe Server' }),
     timestamp(),
     myFormat
   ),
@@ -52,7 +50,6 @@ const errorlogger = createLogger({
       filename: path.join(
         process.cwd(),
         'logs',
-        'winston',
         'errors',
         'phu-%DATE%-error.log'
       ),

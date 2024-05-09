@@ -20,7 +20,7 @@ app.use(globalErrorHandler);
 app.get('/', (req: Request, res: Response) => {
     res.json({
       sucess: true,
-      message: 'Welcome to Bizzy Server',
+      message: 'Welcome to Marriage Consultancy Server',
       status: httpStatus.OK,
     })
 });

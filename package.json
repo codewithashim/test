@@ -1,5 +1,5 @@
 {
-  "name": "bizzzy-timer-backend",
+  "name": "marrysafe-server",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.ts",
@@ -14,7 +14,7 @@
     "lint-prettier": "yarn lint:check && yarn prettier:check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Bizzzy Network",
+  "author": "MarriageConsultancy",
   "license": "ISC",
   "lint-staged": {
     "src/**/*.ts": "yarn lint-prettier"
@@ -23,10 +23,12 @@
     "@types/cookie-parser": "^1.4.3",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
+    "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^4.0.0",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-scope": "^7.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
